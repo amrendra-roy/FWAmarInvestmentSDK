@@ -10,6 +10,12 @@
 		55D42ED1296B0AB500CB15AC /* FWAmarInvestmentSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D42EC8296B0AB400CB15AC /* FWAmarInvestmentSDK.framework */; };
 		55D42ED6296B0AB500CB15AC /* FWAmarInvestmentSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D42ED5296B0AB500CB15AC /* FWAmarInvestmentSDKTests.swift */; };
 		55D42ED7296B0AB500CB15AC /* FWAmarInvestmentSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 55D42ECB296B0AB400CB15AC /* FWAmarInvestmentSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55D42FA8296B27B100CB15AC /* InvestmentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D42FA7296B27B100CB15AC /* InvestmentRequest.swift */; };
+		55D42FAA296B27D200CB15AC /* InvestmentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D42FA9296B27D200CB15AC /* InvestmentResponse.swift */; };
+		55D42FAC296B281900CB15AC /* APIManagerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D42FAB296B281900CB15AC /* APIManagerClient.swift */; };
+		55D42FB8296B367300CB15AC /* InvestmentStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55D42FB7296B367300CB15AC /* InvestmentStory.storyboard */; };
+		55D42FBA296B36D600CB15AC /* InvestmentInitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D42FB9296B36D600CB15AC /* InvestmentInitViewController.swift */; };
+		55D42FBC296B36EA00CB15AC /* InvestmentConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D42FBB296B36EA00CB15AC /* InvestmentConfirmViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +33,12 @@
 		55D42ECB296B0AB400CB15AC /* FWAmarInvestmentSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FWAmarInvestmentSDK.h; sourceTree = "<group>"; };
 		55D42ED0296B0AB500CB15AC /* FWAmarInvestmentSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FWAmarInvestmentSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55D42ED5296B0AB500CB15AC /* FWAmarInvestmentSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FWAmarInvestmentSDKTests.swift; sourceTree = "<group>"; };
+		55D42FA7296B27B100CB15AC /* InvestmentRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentRequest.swift; sourceTree = "<group>"; };
+		55D42FA9296B27D200CB15AC /* InvestmentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentResponse.swift; sourceTree = "<group>"; };
+		55D42FAB296B281900CB15AC /* APIManagerClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerClient.swift; sourceTree = "<group>"; };
+		55D42FB7296B367300CB15AC /* InvestmentStory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InvestmentStory.storyboard; sourceTree = "<group>"; };
+		55D42FB9296B36D600CB15AC /* InvestmentInitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentInitViewController.swift; sourceTree = "<group>"; };
+		55D42FBB296B36EA00CB15AC /* InvestmentConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentConfirmViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +81,11 @@
 		55D42ECA296B0AB400CB15AC /* FWAmarInvestmentSDK */ = {
 			isa = PBXGroup;
 			children = (
+				55D42FB5296B365700CB15AC /* StoryBoard */,
+				55D42FB6296B365700CB15AC /* ViewControllers */,
+				55D42FA6296B275C00CB15AC /* APIRequestManager */,
+				55D42FA4296B275C00CB15AC /* RequestModels */,
+				55D42FA5296B275C00CB15AC /* ResponseModels */,
 				55D42ECB296B0AB400CB15AC /* FWAmarInvestmentSDK.h */,
 			);
 			path = FWAmarInvestmentSDK;
@@ -80,6 +97,47 @@
 				55D42ED5296B0AB500CB15AC /* FWAmarInvestmentSDKTests.swift */,
 			);
 			path = FWAmarInvestmentSDKTests;
+			sourceTree = "<group>";
+		};
+		55D42FA4296B275C00CB15AC /* RequestModels */ = {
+			isa = PBXGroup;
+			children = (
+				55D42FA7296B27B100CB15AC /* InvestmentRequest.swift */,
+			);
+			path = RequestModels;
+			sourceTree = "<group>";
+		};
+		55D42FA5296B275C00CB15AC /* ResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+				55D42FA9296B27D200CB15AC /* InvestmentResponse.swift */,
+			);
+			path = ResponseModels;
+			sourceTree = "<group>";
+		};
+		55D42FA6296B275C00CB15AC /* APIRequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				55D42FAB296B281900CB15AC /* APIManagerClient.swift */,
+			);
+			path = APIRequestManager;
+			sourceTree = "<group>";
+		};
+		55D42FB5296B365700CB15AC /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				55D42FB7296B367300CB15AC /* InvestmentStory.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		55D42FB6296B365700CB15AC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				55D42FB9296B36D600CB15AC /* InvestmentInitViewController.swift */,
+				55D42FBB296B36EA00CB15AC /* InvestmentConfirmViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +202,7 @@
 				TargetAttributes = {
 					55D42EC7296B0AB400CB15AC = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 					};
 					55D42ECF296B0AB500CB15AC = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -174,6 +233,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55D42FB8296B367300CB15AC /* InvestmentStory.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +251,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55D42FBC296B36EA00CB15AC /* InvestmentConfirmViewController.swift in Sources */,
+				55D42FA8296B27B100CB15AC /* InvestmentRequest.swift in Sources */,
+				55D42FBA296B36D600CB15AC /* InvestmentInitViewController.swift in Sources */,
+				55D42FAA296B27D200CB15AC /* InvestmentResponse.swift in Sources */,
+				55D42FAC296B281900CB15AC /* APIManagerClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +401,7 @@
 		55D42EDB296B0AB500CB15AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -355,6 +421,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +430,7 @@
 		55D42EDC296B0AB500CB15AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -390,6 +458,7 @@
 		55D42EDE296B0AB500CB15AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -405,6 +474,7 @@
 		55D42EDF296B0AB500CB15AC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

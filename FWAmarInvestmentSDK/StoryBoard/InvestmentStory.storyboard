@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Investment Init View Controller-->
+        <scene sceneID="c4Q-kN-26o">
+            <objects>
+                <viewController storyboardIdentifier="InvestmentInitViewController" id="9ya-yw-0Xp" customClass="InvestmentInitViewController" customModule="FWAmarInvestmentSDK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1re-4i-ncN">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fdY-gC-dvg">
+                                <rect key="frame" x="20" y="131.33333333333334" width="350" height="48.666666666666657"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="83C-zy-lY1" userLabel="durationSV">
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="48.666666666666664"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration (Year)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Rw-9L-grC">
+                                                <rect key="frame" x="0.0" y="0.0" width="175" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhB-aL-g8k">
+                                                <rect key="frame" x="0.0" y="28.333333333333314" width="175" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="752" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0sc-RH-hhf" userLabel="amountSV">
+                                        <rect key="frame" x="183" y="0.0" width="167" height="48.666666666666664"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invesment Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBD-dx-fEN">
+                                                <rect key="frame" x="0.0" y="0.0" width="167" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2022rs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Zl-sc-gKA">
+                                                <rect key="frame" x="0.0" y="28.333333333333314" width="167" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="83C-zy-lY1" firstAttribute="width" secondItem="fdY-gC-dvg" secondAttribute="width" multiplier="0.5" id="Hz1-Oa-JmT"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Guy-hZ-xjR">
+                                <rect key="frame" x="50" y="665" width="290" height="45"/>
+                                <color key="backgroundColor" red="1" green="0.8862745098" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Y1p-hH-63P"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Investment Init"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9I-y7-jdG">
+                                <rect key="frame" x="18" y="65" width="76.666666666666671" height="34.333333333333343"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
+                                <connections>
+                                    <action selector="dismissInvesmentVC:" destination="9ya-yw-0Xp" eventType="touchUpInside" id="7gZ-YK-4ik"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="f9D-sq-GtR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="f9D-sq-GtR" firstAttribute="trailing" secondItem="fdY-gC-dvg" secondAttribute="trailing" constant="20" id="SaD-aG-oeJ"/>
+                            <constraint firstItem="fdY-gC-dvg" firstAttribute="leading" secondItem="f9D-sq-GtR" secondAttribute="leading" constant="20" id="V9o-m0-wkd"/>
+                            <constraint firstItem="Guy-hZ-xjR" firstAttribute="leading" secondItem="f9D-sq-GtR" secondAttribute="leading" constant="50" id="bsa-6w-Xzi"/>
+                            <constraint firstItem="f9D-sq-GtR" firstAttribute="trailing" secondItem="Guy-hZ-xjR" secondAttribute="trailing" constant="50" id="fAn-gP-LpB"/>
+                            <constraint firstItem="X9I-y7-jdG" firstAttribute="top" secondItem="f9D-sq-GtR" secondAttribute="top" constant="18" id="g0U-Lg-pAD"/>
+                            <constraint firstItem="fdY-gC-dvg" firstAttribute="top" secondItem="X9I-y7-jdG" secondAttribute="bottom" constant="32" id="gwt-N8-jPg"/>
+                            <constraint firstItem="X9I-y7-jdG" firstAttribute="leading" secondItem="f9D-sq-GtR" secondAttribute="leading" constant="18" id="hDa-lw-IDC"/>
+                            <constraint firstItem="f9D-sq-GtR" firstAttribute="bottom" secondItem="Guy-hZ-xjR" secondAttribute="bottom" constant="100" id="okL-O0-wVc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L30-sH-5Z7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-238" y="-674"/>
+        </scene>
+        <!--Investment Confirm View Controller-->
+        <scene sceneID="ep2-42-akH">
+            <objects>
+                <viewController storyboardIdentifier="InvestmentConfirmViewController" id="x5O-fC-jKK" customClass="InvestmentConfirmViewController" customModule="FWAmarInvestmentSDK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iVe-kv-hsY">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GI0-65-IoD">
+                                <rect key="frame" x="50" y="665" width="290" height="45"/>
+                                <color key="backgroundColor" red="1" green="0.8862745098" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="oEV-DY-tmR"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Confirt Investment"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tV-qD-3bj">
+                                <rect key="frame" x="16" y="127.00000000000001" width="358" height="137.33333333333337"/>
+                                <string key="text">This is Investment SDK internal view controller to call Confirm API, and call back to SampleApp with status. Sample app responsible to show Fail/Success Screen</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jcb-pZ-qXh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3tV-qD-3bj" firstAttribute="leading" secondItem="jcb-pZ-qXh" secondAttribute="leading" constant="16" id="FU2-gZ-83q"/>
+                            <constraint firstItem="3tV-qD-3bj" firstAttribute="top" secondItem="jcb-pZ-qXh" secondAttribute="top" constant="80" id="I9j-t6-9du"/>
+                            <constraint firstItem="jcb-pZ-qXh" firstAttribute="trailing" secondItem="GI0-65-IoD" secondAttribute="trailing" constant="50" id="Wkn-7G-csH"/>
+                            <constraint firstItem="jcb-pZ-qXh" firstAttribute="bottom" secondItem="GI0-65-IoD" secondAttribute="bottom" constant="100" id="el3-CC-hxV"/>
+                            <constraint firstAttribute="trailing" secondItem="3tV-qD-3bj" secondAttribute="trailing" constant="16" id="jPE-Z6-woF"/>
+                            <constraint firstItem="GI0-65-IoD" firstAttribute="leading" secondItem="jcb-pZ-qXh" secondAttribute="leading" constant="50" id="mbh-bR-6hp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ytm-eu-RGm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="508" y="-659"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
